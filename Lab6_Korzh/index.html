@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Interface</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>СЕРВІС ДЛЯ ЗАВАНТАЖЕННЯ ДАНИХ З РЕСУРСУ {JSON} PLACEHOLDER</h3>
+        <div class="input-group">
+            <input type="text" placeholder="ENTER URL" id="url-input">
+            <div class="button-group">
+                <button class="load-btn">ЗАВАНТАЖИТИ ДАНІ</button>
+                <button class="clear-btn" disabled>ОЧИСТИТИ</button>
+            </div>
+            <div id="message-container"></div>
+        </div>
+        <div id="display-options" style="display: none;">
+            <h3>ДАНІ ФОРМАТУ JSON УСПІШНО ЗАВАНТАЖЕНО. КІЛЬКІСТЬ ЗАПИСІВ РІВНА <span id="record-count"></span>.</h3>
+            <h3>ВІДОБРАЗИТИ ВАШ ВАРІАНТ ТАБЛИЦІ?</h3>
+            <div class="display-options">
+                <button class="display-btn" id="display-yes-btn">ТАК</button>
+                <button class="hide-btn" id="display-no-btn">НІ</button>
+            </div>
+        </div>
+        <div id="table-container" style="display: none;">
+            <div class="clear-sorting-container">
+                <h3>ТАБЛИЦЯ ДЛЯ ВАРІАНТУ 4</h3>
+                <button class="clear-sorting-btn" id="clear-sorting-btn">ОЧИСТИТИ СОРТУВАННЯ</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sortable"><span class="sort-icon1">↑</span> ID <span class="sort-icon">↓</span></th>
+                        <th class="sortable"><span class="sort-icon1">↑</span> CITY <span class="sort-icon">↓</span></th>
+                        <th class="sortable"><span class="sort-icon1">↑</span> ZIPCODE <span class="sort-icon">↓</span></th>
+                        <th class="sortable"><span class="sort-icon1">↑</span> PHONE <span class="sort-icon">↓</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/task.js"></script>
+</body>
+</html>

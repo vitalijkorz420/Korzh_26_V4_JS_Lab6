@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    width: 100%;
+    max-width: 346px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0eded;
+    border-radius: 4px;
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+.input-group button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 180px; 
+    text-align: center;
+}
+.load-btn {
+    height:60px;
+    weight:260px;
+    color: #B1B8B1;
+    background-color: #359931;
+}
+.clear-btn {
+    height:60px;
+    weight:260px;
+    background-color: #A21482;
+}
+.display-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.display-options button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.display-btn {
+    height:60px;
+    weight:260px;
+    background-color: #98D48C;
+    color: black;
+    width: 180px; 
+    text-align: center;
+}
+.hide-btn {
+    height:60px;
+    weight:260px;
+    background-color: #E01626;
+    width: 180px; 
+    color: white;
+    text-align: center;
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+th, td {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 25%; 
+}
+th {
+    position: relative;
+    color: white;
+}
+th.sortable {
+    cursor: pointer;
+}
+.sort-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sort-icon1 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.clear-sorting-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.clear-sorting-btn {
+    background-color: #E01C33;
+    height:60px;
+    weight:260px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+th:nth-child(1) {
+    background-color: #A21482; 
+}
+th:nth-child(2) {
+    background-color: #A21482; 
+}
+th:nth-child(3) {
+    background-color: #A21482; 
+}
+th:nth-child(4) {
+    background-color: #E34CA3;
+}
+th:not(:last-child),
+td:not(:last-child) {
+padding-right: 20px; 
+}
+tbody tr:nth-child(odd) {
+background-color: #EAC4DE;
+}
+tbody tr:nth-child(even) {
+background-color: #DA9DCC; 
+}
